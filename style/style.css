@@ -3,6 +3,10 @@
   --secondary-color: #2196f3;
   --third-plan-color: #f5f4fa;
 }
+
+body{
+  font-family: Roboto;
+}
 /* header */
 
 .header-item :hover {
