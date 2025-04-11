@@ -22,11 +22,13 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <section class="section-header">
-          <a href="./index.html" class="header-link"
-            ><img src="./img/webstudio.webp" alt="" class="header-logo"
-          /></a>
+          <div id="logo">
+            <a href="./index.html"
+              ><span class="web">Web</span><span class="studio">Studio</span></a
+            >
+          </div>
           <nav class="header-navigation">
             <ul class="header-list">
               <li class="header-item">
@@ -39,12 +41,8 @@
                 <a href="" class="header-link">контакти</a>
               </li>
             </ul>
-            <a href="mailto:info@devstudio.com" class="header-mail"
-              >info@devstudio.com</a
-            >
-            <a href="tel:+380961111111" class="header-phone"
-              >+38 096 111 11 11</a
-            >
+            <a href="mailto:info@devstudio.com" id="mail">info@devstudio.com</a>
+            <a href="tel:+380961111111" id="phone">+38 096 111 11 11</a>
           </nav>
         </section>
       </div>
@@ -52,85 +50,76 @@
     <main class="main">
       <div class="container">
         <section class="hero-section">
-          <h1 class="hero-title">
-            еффективні рішення для <br />вашого бізнесу
-          </h1>
-          <button type="button" class="hero-title">замовити послугу</button>
+          <h1 class="hero-title">еффективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero-button">замовити послугу</button>
         </section>
-      </div>
-      <div class="container">
-        <section class="main-section">
-          <ul class="main-list">
-            <li class="main-item">
-              <h3 class="main-hthird">увага до деталей</h3>
-              <p class="main-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Deserunt, ipsa!
+        <section class="main-section_about">
+          <ul class="about-list">
+            <li class="about-item">
+              <h3 class="about-hthird">увага до деталей</h3>
+              <p class="about-text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
               </p>
             </li>
-            <li class="main-list">
-              <h3 class="main-hthird">пунктуальність</h3>
-              <p class="main-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Deserunt, ipsa!
+            <li class="about-item">
+              <h3 class="about-hthird">пунктуальність</h3>
+              <p class="about-text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
               </p>
             </li>
-            <li class="main-list">
-              <h3 class="main-hthird">планування</h3>
-              <p class="main-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Deserunt, ipsa!
+            <li class="about-item">
+              <h3 class="about-hthird">планування</h3>
+              <p class="about-text">
+                Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="main-list">
-              <h3 class="main-hthird">сучасні технології</h3>
-              <p class="main-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Deserunt, ipsa!
+            <li class="about-item">
+              <h3 class="about-hthird">сучасні технології</h3>
+              <p class="about-text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
               </p>
             </li>
           </ul>
         </section>
-      </div>
-      <div class="container">
-        <section class="main-section">
-          <h2 class="main-subtitle">Чим ми займаємося</h2>
-          <ul class="main-list">
-            <li class="main-item">
-              <img src="./img/img(2)-1.webp" alt="img" class="main-img" />
+        <section class="main-section_wwd">
+          <h2 class="wwd-subtitle">Чим ми займаємося</h2>
+          <ul class="wwd-list">
+            <li class="wwd-item">
+              <img src="./img/img(2)-1.webp" alt="img" class="wwd-img" />
             </li>
-            <li class="main-item">
-              <img src="./img/img(1)-1.webp" alt="img" class="main-img" />
+            <li class="wwd-item">
+              <img src="./img/img(1)-1.webp" alt="img" class="wwd-img" />
             </li>
-            <li class="main-item">
-              <img src="./img/img-1.webp" alt="img" class="main-img" />
+            <li class="wwd-item">
+              <img src="./img/img-1.webp" alt="img" class="wwd-img" />
             </li>
           </ul>
         </section>
-      </div>
-      <div class="container">
         <section class="main-section_staff">
-          <h2 class="main-subtitle">Наша команда</h2>
-          <ul class="main-list">
-            <li class="main-item">
-              <img src="./img/img(9).webp" alt="igor" class="main-staff" />
-              <h3 class="main-hthird">Ігор Дем'яненко</h3>
-              <p class="main-text">Product Designer</p>
+          <h2 class="staff-subtitle">Наша команда</h2>
+          <ul class="staff-list">
+            <li class="staff-item">
+              <img src="./img/img(9).webp" alt="igor" class="staff-img" />
+              <h3 class="staff-hthird">Ігор Дем'яненко</h3>
+              <p class="staff-text">Product Designer</p>
             </li>
-            <li class="main-item">
-              <img src="./img/img(10).webp" alt="olga" class="main-staff" />
-              <h3 class="main-hthird">Ольга Рєпіна</h3>
-              <p class="main-text">Frontend Developer</p>
+            <li class="staff-item">
+              <img src="./img/img(10).webp" alt="olga" class="staff-img" />
+              <h3 class="staff-hthird">Ольга Рєпіна</h3>
+              <p class="staff-text">Frontend Developer</p>
             </li>
-            <li class="main-item">
-              <img src="./img/img(11).webp" alt="mykola" class="main-staff" />
-              <h3 class="main-hthird">Микола Тарасов</h3>
-              <p class="main-text">Marketing</p>
+            <li class="staff-item">
+              <img src="./img/img(11).webp" alt="mykola" class="staff-img" />
+              <h3 class="staff-hthird">Микола Тарасов</h3>
+              <p class="staff-text">Marketing</p>
             </li>
-            <li class="main-item">
-              <img src="./img/img(12).webp" alt="myhaylo" class="main-staff" />
-              <h3 class="main-hthird">Михайло Єрмаков</h3>
-              <p class="main-text">UI Designer</p>
+            <li class="staff-item">
+              <img src="./img/img(12).webp" alt="myhaylo" class="staff-img" />
+              <h3 class="staff-hthird">Михайло Єрмаков</h3>
+              <p class="staff-text">UI Designer</p>
             </li>
           </ul>
         </section>
@@ -138,12 +127,14 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <img src="./img/webstudio.webp" alt="webstudio" class="footer-logo" />
+        <div id="logo">
+          <a href="./index.html"
+            ><span class="web">Web</span><span class="studio">Studio</span></a
+          >
+        </div>
         <p class="footer-addres">м. Київ, пр-т Лесі Українки, 26</p>
-        <a href="mailto:info@devstudio.com" class="footer-mail"
-          >info@devstudio.com</a
-        >
-        <a href="tel:+380961111111" class="footer-phone">+38 096 111 11 11</a>
+        <a href="mailto:info@devstudio.com" id="mail">info@devstudio.com</a>
+        <a href="tel:+380961111111" id="phone">+38 096 111 11 11</a>
       </div>
     </footer>
   </body>
