@@ -1,6 +1,99 @@
+:root {
+  --main-color: #2f303a;
+  --secondary-color: #2196f3;
+  --third-plan-color: #f5f4fa;
+}
+
+.container {
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.web {
+  color: #2196f3;
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
+.studio {
+  color: #000;
+  font-family: Raleway;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+
+body {
+  font-family: Roboto;
+}
+
+#mail {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  margin-right: 50px;
+}
+
+#mail:hover {
+  color: #2196f3;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  margin-right: 50px;
+}
+
+#phone {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+#phone:hover {
+  color: #2196f3;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
 /* header */
 
-.header-item {
+.studio {
+  margin-right: 93px;
+}
+
+.header-contacts {
+  margin-right: 344px;
+}
+
+.header-list {
+  display: flex;
+  gap: 50px;
+}
+
+.header-link {
   color: #212121;
   font-family: Roboto;
   font-size: 14px;
@@ -10,7 +103,7 @@
   letter-spacing: 0.28px;
 }
 
-.header-item :hover {
+.header-link:hover {
   color: #2196f3;
   font-family: Roboto;
   font-size: 14px;
@@ -20,54 +113,39 @@
   letter-spacing: 0.28px;
 }
 
-.header-mail :hover {
-  color: #2196f3;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
+.section-header {
+  display: flex;
 }
 
-.header-mail {
-  color: #757575;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
+.header-navigation {
+  display: flex;
 }
 
-.header-phone {
-  color: #757575;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-}
-
-.header-phone :hover {
-  color: #2196f3;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
+.header {
+  margin-bottom: 119px;
 }
 
 /* main-hero */
 
-.hero-button :hover {
+.hero-button {
   border-radius: 4px;
   background: #f5f4fa;
   width: 125px;
   height: 38px;
   flex-shrink: 0;
+}
+
+.hero-button:hover {
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+.hero-list {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 50px;
 }
 
 /* main */
@@ -116,13 +194,6 @@
 
 /* footer */
 
-.footer {
-  background: #2f303a;
-  width: 1600px;
-  height: 252px;
-  flex-shrink: 0;
-}
-
 .footer-addres {
   width: 231px;
   height: 21px;
@@ -134,44 +205,4 @@
   font-weight: 400;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
-}
-
-.footer-mail :hover {
-  color: #2196f3;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-}
-
-.footer-mail {
-  color: #757575;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-}
-
-.footer-phone {
-  color: #757575;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-}
-
-.footer-phone :hover {
-  color: #2196f3;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
 }
