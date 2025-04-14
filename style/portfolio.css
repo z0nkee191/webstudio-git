@@ -192,6 +192,14 @@ body {
   flex-shrink: 0;
 }
 
+.main-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
 /* footer */
 
 .footer-addres {
