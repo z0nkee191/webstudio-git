@@ -123,6 +123,8 @@ body {
 /* hero */
 
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
   color: #fff;
   text-align: center;
   font-family: Roboto;
@@ -221,6 +223,7 @@ body {
 
 .staff-img {
   width: 270px;
+  margin-bottom: 30px;
 }
 
 .staff-list {
@@ -237,6 +240,7 @@ body {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.48px;
+  margin-bottom: 10px;
 }
 
 .staff-text {
