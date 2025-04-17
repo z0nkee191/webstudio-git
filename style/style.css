@@ -129,14 +129,16 @@ body {
 
 .hero-container {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-section {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: rgba(47, 48, 58, 1);
+  height: 600px;
 }
 
 .hero-title {
@@ -152,7 +154,6 @@ body {
   letter-spacing: 2.64px;
   text-transform: uppercase;
   max-width: 695px;
-  margin-top: 225px;
   margin-bottom: 30px;
 }
 
@@ -174,7 +175,7 @@ body {
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 10px;
-  margin-left: 842px;
+  cursor: pointer;
 }
 
 /* main */
