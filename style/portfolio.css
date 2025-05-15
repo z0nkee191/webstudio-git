@@ -84,6 +84,7 @@ body {
   align-content: center;
   height: 80px;
   margin-bottom: 94px;
+  border-bottom: #000;
 }
 
 .studio {
@@ -159,6 +160,9 @@ body {
   width: 370px;
   height: 404px;
   flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  flex-basis: calc((100% - (30px * 3))/12);
 }
 
 .main-hthird {
@@ -217,6 +221,7 @@ body {
 
 .footer {
   background: #2f303a;
+  height: 252px;
 }
 
 .footer-addres {
