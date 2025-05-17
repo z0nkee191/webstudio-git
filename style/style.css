@@ -132,6 +132,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .hero-section {
@@ -139,6 +140,7 @@ body {
   padding-bottom: 200px;
   background-color: rgba(47, 48, 58, 1);
   height: 600px;
+  background-image: url("../img/hero-bg.webp");
 }
 
 .hero-title {
@@ -312,6 +314,17 @@ body {
   line-height: normal;
   letter-spacing: 0.48px;
   margin-bottom: 184px;
+}
+
+.staff-item {
+  border-radius: 0px 0px 4px 4px;
+  background: #FFF;
+  width: 270px;
+  height: 368px;
+  flex-shrink: 0;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+  flex-basis: calc((100% - (30px * 4))/4);
+  margin-bottom: 94px;
 }
 
 /* footer */

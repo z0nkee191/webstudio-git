@@ -165,6 +165,12 @@ body {
   flex-basis: calc((100% - (30px * 3))/12);
 }
 
+.main-item:hover {
+  border: 1px solid #EEE;
+  background: #FFF;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
 .main-hthird {
   color: #212121;
   font-family: Roboto;
