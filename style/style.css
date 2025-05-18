@@ -82,6 +82,7 @@ body {
 .header {
   align-content: center;
   height: 80px;
+  border-bottom: solid #757575;
 }
 
 .studio {
@@ -335,6 +336,8 @@ body {
 
 .footer {
   background: #2f303a;
+  height: 252px;
+  align-content: center;
 }
 
 .footer-addres {
