@@ -83,7 +83,7 @@ body {
 .header {
   align-content: center;
   height: 80px;
-  margin-bottom: 94px;
+  
   border-bottom: solid #757575;
 }
 
@@ -136,6 +136,7 @@ body {
   width: 125px;
   height: 38px;
   flex-shrink: 0;
+  margin-top: 94px;
 }
 
 .hero-button:hover {
@@ -183,6 +184,8 @@ body {
   text-transform: uppercase;
   width: 270px;
   margin-left: 24px;
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 
 .main-text {
@@ -241,6 +244,8 @@ body {
   font-weight: 400;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 .footer-studio {
@@ -251,4 +256,10 @@ body {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.78px;
+}
+
+.footer-contact_inf {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
