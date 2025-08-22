@@ -1,0 +1,67 @@
+
+.about-section {
+  padding-top: 94px;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.about-title {
+  color: var(--title-color);
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.about-item::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+.about-item:nth-child(1)::before {
+  background-image: url("../img/antenna.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-item:nth-child(2)::before {
+  background-image: url("../img/clock.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-item:nth-child(3)::before {
+  background-image: url("../img/diagram.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-item:nth-child(4):before {
+  background-image: url("../img/astronaut.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-text {
+  color: var(--text-color);
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
