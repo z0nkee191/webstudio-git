@@ -1,13 +1,41 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
 }
 
 :root {
   --link-color: #2196f3;
   --title-color: #212121;
   --text-color: #757575;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .container {
@@ -20,8 +48,6 @@
 .body {
   font-family: "Roboto";
 }
-
-/* Header */
 
 .header {
   padding-top: 24px;
@@ -75,8 +101,7 @@
   position: absolute;
   left: 0;
   bottom: -32px;
-  transition: background 175ms ease-in-out,
-    opacity 175ms ease-in-out;
+  transition: background 175ms ease-in-out, opacity 175ms ease-in-out;
 }
 
 .header-link:hover::after {
@@ -151,8 +176,6 @@
   color: #2196f3;
 }
 
-/* hero */
-
 .hero-section {
   padding-top: 94px;
 }
@@ -174,20 +197,15 @@
   letter-spacing: 0.48px;
   border-radius: 4px;
   padding: 6px 22px;
-  transition: background 250ms ease-in-out,
-    color 250ms ease-in-out,
-    box-shadow 250ms ease-in-out;
+  transition: background 250ms ease-in-out, color 250ms ease-in-out, box-shadow 250ms ease-in-out;
 }
 
 .hero-button:focus,
 .hero-button:hover {
   color: #fff;
   background: #2196f3;
-  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
-    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
-
-/* main */
 
 .main-overlay {
   position: absolute;
@@ -235,13 +253,12 @@
 .main-item {
   border: 1px solid #eee;
   max-width: 370px;
-  flex-basis: calc((100 - (30px * 2)) / 3);
+  flex-basis: calc((100% - 60px) / 3);
   transition: box-shadow 250ms;
 }
 
 .main-item:hover {
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 .main-hthird {
@@ -267,8 +284,6 @@
   padding-left: 24px;
   padding-bottom: 20px;
 }
-
-/* footer */
 
 .footer-section {
   background: #2f303a;
@@ -468,4 +483,4 @@
   width: 24px;
   height: 24px;
   fill: #fff;
-}
+}/*# sourceMappingURL=portfolio.css.map */
