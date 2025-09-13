@@ -54,13 +54,11 @@ a {
   padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
 }
-
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
-
-.header-logo {
+.header__logo {
   color: #000;
   font-family: "Raleway";
   font-size: 26px;
@@ -68,8 +66,7 @@ a {
   letter-spacing: 0.78px;
   text-decoration: none;
 }
-
-.header-logo-color {
+.header__logo--color {
   color: #2196f3;
   font-family: "Raleway";
   font-size: 26px;
@@ -78,20 +75,17 @@ a {
   line-height: normal;
   letter-spacing: 0.78px;
 }
-
-.header-nav {
+.header__nav {
   width: 100%;
   margin-left: 93px;
 }
-
-.header-list {
+.header__list {
   list-style-type: none;
   display: flex;
   align-items: center;
   gap: 50px;
 }
-
-.header-link::after {
+.header__link::after {
   content: "";
   width: 100%;
   height: 4px;
@@ -103,12 +97,10 @@ a {
   bottom: -32px;
   transition: background 175ms ease-in-out, opacity 175ms ease-in-out;
 }
-
-.header-link:hover::after {
+.header__link:hover::after {
   opacity: 1;
 }
-
-.header-link {
+.header__link {
   color: #212121;
   font-family: "Roboto";
   font-size: 14px;
@@ -121,25 +113,20 @@ a {
   position: relative;
   transition: color 250ms ease-in-out;
 }
-
-.header-link:hover,
-.header-link:focus {
+.header__link:hover, .header__link:focus {
   color: #2196f3;
 }
-
-.header-contact-list {
+.header__contact--list {
   list-style-type: none;
   display: flex;
   align-items: center;
   margin-left: auto;
 }
-
-.header-contact-icon {
+.header__contact--icon {
   margin-right: 10px;
   fill: currentColor;
 }
-
-.header-contact-email {
+.header__contact--email {
   color: #757575;
   font-family: "Roboto";
   font-size: 14px;
@@ -152,13 +139,10 @@ a {
   align-items: center;
   transition: color 250ms ease-in-out;
 }
-
-.header-contact-email:hover,
-.header-contact-email:focus {
+.header__contact--email:hover, .header__contact--email:focus {
   color: #2196f3;
 }
-
-.header-contact-tell {
+.header__contact--tell {
   color: #757575;
   font-family: "Roboto";
   font-size: 14px;
@@ -170,23 +154,19 @@ a {
   display: flex;
   transition: color 250ms ease-in-out;
 }
-
-.header-contact-tell:hover,
-.header-contact-tell:focus {
+.header__contact--tell:hover, .header__contact--tell:focus {
   color: #2196f3;
 }
 
-.hero-section {
+.hero {
   padding-top: 94px;
 }
-
-.hero-list {
+.hero__list {
   display: flex;
   justify-content: center;
   gap: 8px;
 }
-
-.hero-button {
+.hero__button {
   color: var(--title-color);
   text-align: center;
   font-family: "Roboto";
@@ -199,15 +179,13 @@ a {
   padding: 6px 22px;
   transition: background 250ms ease-in-out, color 250ms ease-in-out, box-shadow 250ms ease-in-out;
 }
-
-.hero-button:focus,
-.hero-button:hover {
+.hero__button:focus, .hero__button:hover {
   color: #fff;
   background: #2196f3;
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
-.main-overlay {
+.main__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -217,17 +195,14 @@ a {
   transform: translatey(100%);
   transition: transform 250ms ease-in-out;
 }
-
-.main-box {
+.main__box {
   position: relative;
   overflow: hidden;
 }
-
-.main-item:hover .main-overlay {
+.main__item:hover .main__overlay {
   transform: translatey(0);
 }
-
-.main-overlay p {
+.main__overlay p {
   width: 322px;
   color: #fff;
   font-size: 18px;
@@ -236,12 +211,10 @@ a {
   letter-spacing: 0.54px;
   margin: 63px 24px;
 }
-
-.main-section {
+.main__section {
   padding-bottom: 94px;
 }
-
-.main-list {
+.main__list {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -249,19 +222,16 @@ a {
   gap: 30px;
   padding-top: 50px;
 }
-
-.main-item {
+.main__item {
   border: 1px solid #eee;
   max-width: 370px;
   flex-basis: calc((100% - 60px) / 3);
   transition: box-shadow 250ms;
 }
-
-.main-item:hover {
+.main__item:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
-
-.main-hthird {
+.main__hthird {
   color: var(--title-color);
   font-family: "Roboto";
   font-size: 18px;
@@ -271,8 +241,7 @@ a {
   margin-top: 15px;
   padding-left: 24px;
 }
-
-.main-text {
+.main__text {
   color: var(--text-color);
   font-family: "Roboto";
   font-size: 16px;
@@ -293,18 +262,16 @@ a {
   padding-bottom: 60px;
 }
 
-.footer-container {
+.footer {
   display: flex;
   justify-items: flex-start;
   justify-content: space-between;
 }
-
-.footer-info {
+.footer__info {
   display: flex;
   flex-direction: column;
 }
-
-.footer-logo {
+.footer__logo {
   color: #fff;
   font-family: "Raleway";
   font-size: 26px;
@@ -315,8 +282,7 @@ a {
   text-decoration: none;
   margin-bottom: 20px;
 }
-
-.footer-logo-color {
+.footer__logo--color {
   color: #2196f3;
   font-family: "Raleway";
   font-size: 26px;
@@ -325,8 +291,7 @@ a {
   line-height: normal;
   letter-spacing: 0.78px;
 }
-
-.footer-adress {
+.footer__adress {
   color: #fff;
   font-family: "Roboto";
   font-size: 14px;
@@ -338,13 +303,10 @@ a {
   margin-bottom: 9px;
   transition: color 250ms ease-in-out;
 }
-
-.footer-adress:hover,
-.footer-adress:focus {
+.footer__adress:hover, .footer__adress:focus {
   color: #2196f3;
 }
-
-.footer-link {
+.footer__link {
   color: rgba(255, 255, 255, 0.6);
   font-family: "Roboto";
   font-size: 14px;
@@ -355,31 +317,23 @@ a {
   text-decoration: none;
   margin-bottom: 9px;
 }
-
-.footer-phone {
+.footer__phone {
   transition: color 250ms ease-in-out;
 }
-
-.footer-enevlope {
+.footer__enevlope {
   transition: color 250ms ease-in-out;
 }
-
-.footer-phone:hover,
-.footer-phone:focus {
+.footer__phone:hover, .footer__phone:focus {
   color: #2196f3;
 }
-
-.footer-enevlope:hover,
-.footer-enevlope:focus {
+.footer__enevlope:hover, .footer__enevlope:focus {
   color: #2196f3;
 }
-
-.footer-contact-icon {
+.footer__contact--icon {
   margin-right: 10px;
   fill: currentColor;
 }
-
-.footer-subtitle {
+.footer__subtitle {
   color: #fff;
   font-family: "Roboto";
   font-size: 14px;
@@ -390,18 +344,14 @@ a {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-
-.footer-list-social {
+.footer__list--social {
   display: flex;
   gap: 10px;
 }
-
-.footer-item-social:hover,
-.footer-item-social:focus {
+.footer__item--social:hover, .footer__item--social:focus {
   background-color: #2196f3;
 }
-
-.footer-item-social {
+.footer__item--social {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   width: 44px;
@@ -411,14 +361,12 @@ a {
   justify-content: center;
   transition: background-color 250ms ease-in-out;
 }
-
-.footer-link-social {
+.footer__link--social {
   width: 20px;
   height: 20px;
   fill: white;
 }
-
-.footer-subtitle {
+.footer__subtitle {
   color: #fff;
   font-family: "Roboto";
   font-size: 14px;
@@ -428,13 +376,11 @@ a {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-
-.footer-form {
+.footer__form {
   display: flex;
   gap: 12px;
 }
-
-.footer-label {
+.footer__label {
   width: 358px;
   height: 50px;
   border-radius: 4px;
@@ -444,8 +390,7 @@ a {
   display: flex;
   align-items: center;
 }
-
-.footer-input {
+.footer__input {
   color: rgba(255, 255, 255, 0.6);
   font-family: "Roboto";
   font-size: 16px;
@@ -458,8 +403,7 @@ a {
   outline: none;
   background: #2f303a;
 }
-
-.footer-btn {
+.footer__btn {
   color: #fff;
   text-align: center;
   font-family: "Roboto";
@@ -478,8 +422,7 @@ a {
   justify-content: center;
   gap: 10px;
 }
-
-.footer-btn-icon {
+.footer__btn--icon {
   width: 24px;
   height: 24px;
   fill: #fff;
