@@ -5,24 +5,14 @@
   &__title {
     color: var(--title-color);
     text-align: center;
-    font-family: "Roboto";
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
+    @include text-main-style(36px 700 normal 1.08px);
     margin-bottom: 50px;
   }
 
   &__list {
     list-style-type: none;
     text-align: center;
-    font-family: "Roboto";
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
+    @include text-main-style(36px 700 normal 1.08px);
     display: flex;
     flex-direction: row;
     gap: 30px;

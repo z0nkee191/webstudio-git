@@ -17,34 +17,23 @@
 
   &__logo {
     color: #fff;
-    font-family: "Raleway";
-    font-size: 26px;
+    @extend %header_logo;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
-    letter-spacing: 0.78px;
     text-decoration: none;
     margin-bottom: 20px;
   }
 
   &__logo--color {
     color: #2196f3;
-    font-family: "Raleway";
-    font-size: 26px;
+    @extend %header_logo;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
-    letter-spacing: 0.78px;
   }
 
   &__adress {
     color: #fff;
-    font-family: "Roboto";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 171.429% */
-    letter-spacing: 0.42px;
+    @extend %footer_text;
     text-decoration: none;
     margin-bottom: 9px;
     transition: color 250ms ease-in-out;
@@ -57,12 +46,7 @@
 
   &__link {
     color: rgba(255, 255, 255, 0.6);
-    font-family: "Roboto";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 171.429% */
-    letter-spacing: 0.42px;
+    @extend %footer_text;
     text-decoration: none;
     margin-bottom: 9px;
   }
@@ -92,12 +76,7 @@
 
   &__subtitle {
     color: #fff;
-    font-family: "Roboto";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
+    @include text-main-style(14px 700 normal 0.42px);
     text-transform: uppercase;
     margin-bottom: 20px;
   }
@@ -131,12 +110,7 @@
 
   &__subtitle {
     color: #fff;
-    font-family: "Roboto";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
+    @include text-main-style(14px 700 normal 0.42px);
     text-transform: uppercase;
   }
 
@@ -158,12 +132,7 @@
 
   &__input {
     color: rgba(255, 255, 255, 0.6);
-    font-family: "Roboto";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 125% */
-    letter-spacing: 0.48px;
+    @include text-main-style(16px 400 20px 0.48px);
     margin-left: 16px;
     border: none;
     outline: none;
@@ -173,12 +142,7 @@
   &__btn {
     color: #fff;
     text-align: center;
-    font-family: "Roboto";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px; /* 187.5% */
-    letter-spacing: 0.96px;
+    @include text-main-style(16px 700 30px 0.96px);
     border-radius: 4px;
     background: #2196f3;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);

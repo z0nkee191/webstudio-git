@@ -9,26 +9,22 @@
   }
   &__item:nth-child(1)::before {
     background-image: url("../img/antenna.webp");
-    background-repeat: no-repeat;
-    background-position: center;
+    @extend %about_item;
   }
 
   &__item:nth-child(2)::before {
     background-image: url("../img/clock.webp");
-    background-repeat: no-repeat;
-    background-position: center;
+    @extend %about_item;
   }
 
   &__item:nth-child(3)::before {
     background-image: url("../img/diagram.webp");
-    background-repeat: no-repeat;
-    background-position: center;
+    @extend %about_item;
   }
 
   &__item:nth-child(4):before {
     background-image: url("../img/astronaut.webp");
-    background-repeat: no-repeat;
-    background-position: center;
+    @extend %about_item;
   }
   &__item::before {
     content: "";
@@ -41,22 +37,12 @@
   }
   &__title {
     color: var(--title-color);
-    font-family: "Roboto";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
+    @include text-main-style(14px 700 normal 0.42px);
     text-transform: uppercase;
     margin-bottom: 10px;
   }
   &__text {
     color: var(--text-color);
-    font-family: "Roboto";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 171.429% */
-    letter-spacing: 0.42px;
+    @include text-main-style(14px 400 24 0.42px);
   }
 }
