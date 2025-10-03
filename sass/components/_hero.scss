@@ -1,27 +1,56 @@
 .hero {
+  outline: solid red;
+  width: auto;
+  height: 400px;
   flex-shrink: 0;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 198px;
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4)),
     url("../img/background.webp");
   background-size: 100% 600px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1280px) {
+    flex-shrink: 0;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 280px;
+    background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4)),
+      url("../img/background.webp");
+    background-size: 100% 600px;
+  }
 
   &__title {
-    font-family: "Roboto";
-    color: #ffff;
-    margin-bottom: 30px;
-    font-size: 44px;
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
     font-weight: 900;
     text-transform: uppercase;
-    text-align: center;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 136.364%;
-    letter-spacing: 2.64px;
-    width: 696px;
+    font-size: 26px;
+    line-height: 162%;
+    letter-spacing: 0.06em;
+    max-width: 360px;
     margin: 0 auto;
     margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1280px) {
+      font-family: "Roboto";
+      color: #ffff;
+      margin-bottom: 30px;
+      font-size: 44px;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 136.364%;
+      letter-spacing: 2.64px;
+      width: 696px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    }
   }
 
   &__button {

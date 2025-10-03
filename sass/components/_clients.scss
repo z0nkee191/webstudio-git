@@ -5,7 +5,7 @@
   &__heading {
     color: var(--title-color);
     text-align: center;
-    @include text-main-style(36px 700 normal 1.08px);
+    @include text-main-style(36px, 700, normal, 1.08px);
     margin-bottom: 50px;
   }
 

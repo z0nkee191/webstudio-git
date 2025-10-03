@@ -6,7 +6,7 @@
   &__title {
     color: var(--title-color);
     text-align: center;
-    @include text-main-style(36px 700 normal 1.08px);
+    @include text-main-style(36px, 700, normal, 1.08px);
     margin-bottom: 50px;
   }
 
@@ -35,13 +35,13 @@
   &__list--title {
     color: var(--title-color);
     text-align: center;
-    @include text-main-style(16px 400 normal 0.48px);
+    @include text-main-style(16px, 400, normal, 0.48px);
     margin-bottom: 10px;
   }
   &__text {
     color: var(--text-color);
     text-align: center;
-    @include text-main-style(16px 400 normal 0.48px);
+    @include text-main-style(16px, 400, normal, 0.48px);
     margin-bottom: 16px;
   }
   &__list--social {

@@ -1,10 +1,15 @@
 .about {
-  padding-top: 94px;
+  padding-top: 60px;
+  
+  @media screen and (min-width: 1280px) {
+    padding-top: 94px;
+  }
 
   &__list {
     display: flex;
     gap: 30px;
-    flex-direction: row;
+    
+    justify-content: center;
     list-style-type: none;
   }
   &__item:nth-child(1)::before {
@@ -29,7 +34,7 @@
   &__item::before {
     content: "";
     display: block;
-    width: 270px;
+    width: 450px;
     height: 120px;
     border-radius: 4px;
     background: #f5f4fa;
@@ -37,12 +42,12 @@
   }
   &__title {
     color: var(--title-color);
-    @include text-main-style(14px 700 normal 0.42px);
+    @include text-main-style(14px, 700, normal, 0.42px);
     text-transform: uppercase;
     margin-bottom: 10px;
   }
   &__text {
     color: var(--text-color);
-    @include text-main-style(14px 400 24 0.42px);
+    @include text-main-style(14px, 400, 24, 0.42px);
   }
 }
