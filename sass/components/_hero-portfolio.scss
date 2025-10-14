@@ -1,11 +1,16 @@
-.hero {
+.hero-port {
   padding-top: 94px;
-  &__list {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-  }
 
+  &__list {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: start;
+    gap: 8px;
+    @media screen and  (min-width: 768px){
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+  }
   &__button {
     color: var(--title-color);
     text-align: center;
@@ -19,6 +24,7 @@
     padding: 6px 22px;
     transition: background 250ms ease-in-out, color 250ms ease-in-out,
       box-shadow 250ms ease-in-out;
+    
   }
 
   &__button:focus,
