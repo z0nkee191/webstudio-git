@@ -12,6 +12,7 @@ img {
   display: block;
   width: 100%;
   max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -413,7 +414,6 @@ a {
 }
 
 .hero {
-  outline: solid red;
   width: auto;
   height: 400px;
   flex-shrink: 0;
@@ -921,6 +921,27 @@ a {
   padding-bottom: 20px;
 }
 
+.mobile-menu {
+  z-index: 3;
+  padding-left: 40px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 48px;
+}
+.mobile-menu__box {
+  display: flex;
+}
+.mobile-menu__btn--close {
+  width: 40px;
+  height: 40px;
+  justify-self: end;
+}
+.mobile-menu__list {
+  flex-direction: column;
+  display: flex;
+  gap: 32px;
+}
+
 .footer-section {
   background: #2f303a;
   height: 100%;
@@ -937,16 +958,37 @@ a {
   justify-content: space-between;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1280px) {
   .footer {
     flex-direction: row;
     justify-items: flex-start;
-    justify-content: space-between;
+    flex-wrap: nowrap;
   }
 }
 .footer__info {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .footer__info {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__info {
+    margin-right: 70px;
+    align-items: flex-start;
+  }
 }
 .footer__logo {
   color: #fff;
@@ -1013,6 +1055,17 @@ a {
   text-transform: uppercase;
   margin-top: 60px;
   margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__subtitle {
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__subtitle {
+    text-align: start;
+  }
 }
 .footer__list--social {
   display: flex;
@@ -1051,6 +1104,11 @@ a {
   gap: 12px;
   flex-direction: column;
 }
+@media screen and (min-width: 1280px) {
+  .footer__form {
+    flex-direction: row;
+  }
+}
 .footer__label {
   width: 358px;
   height: 50px;
@@ -1062,7 +1120,7 @@ a {
   align-items: center;
 }
 .footer__input {
-  width: 100%;
+  width: 358px;
   color: rgba(255, 255, 255, 0.6);
   font-family: "Roboto";
   font-size: 16px;
@@ -1098,4 +1156,19 @@ a {
   width: 24px;
   height: 24px;
   fill: #fff;
+}
+@media screen and (min-width: 1280px) {
+  .footer__box {
+    margin-right: 93px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__field {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__field {
+    margin-top: 0px;
+  }
 }/*# sourceMappingURL=style.css.map */
