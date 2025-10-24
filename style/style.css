@@ -929,6 +929,11 @@ a {
   padding-top: 10px;
   padding-bottom: 48px;
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 .mobile-menu__box {
   display: flex;
 }
