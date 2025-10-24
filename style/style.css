@@ -505,6 +505,7 @@ a {
 .about__list {
   display: flex;
   gap: 30px;
+  align-items: center;
   justify-content: center;
   list-style-type: none;
   flex-direction: column;
@@ -551,7 +552,6 @@ a {
   .about__item::before {
     width: 270px;
     height: 120px;
-    flex-basis: calc((100% - 90px) / 4);
   }
 }
 .about__title {
@@ -567,7 +567,7 @@ a {
 }
 .about__text {
   color: var(--text-color);
-  width: 354px;
+  width: 270px;
   font-family: "Roboto";
   font-size: 14px;
   font-style: normal;

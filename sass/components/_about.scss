@@ -8,6 +8,7 @@
   &__list {
     display: flex;
     gap: 30px;
+    align-items: center;
     justify-content: center;
     list-style-type: none;
     flex-direction: column;
@@ -18,7 +19,6 @@
     }
     @media screen and (min-width: 1280px) {
       flex-wrap: nowrap;
-      
     }
   }
 
@@ -59,7 +59,6 @@
     @media screen and (min-width: 1280px) {
       width: 270px;
       height: 120px;
-      flex-basis: calc((100% - (30px * 3)) /4);
     }
   }
 
@@ -72,7 +71,7 @@
 
   &__text {
     color: var(--text-color);
-    width: 354px;
+    width: 270px;
     @include text-main-style(14px, 400, 24px, 0.42px);
   }
 }
