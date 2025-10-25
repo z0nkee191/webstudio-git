@@ -14,6 +14,7 @@
     flex-direction: column;
 
     @media screen and (min-width: 768px) {
+      align-items: normal;
       flex-wrap: wrap;
       flex-direction: row;
     }
@@ -74,4 +75,5 @@
     width: 270px;
     @include text-main-style(14px, 400, 24px, 0.42px);
   }
+  
 }

@@ -512,6 +512,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .about__list {
+    align-items: normal;
     flex-wrap: wrap;
     flex-direction: row;
   }
@@ -922,30 +923,96 @@ a {
   padding-bottom: 20px;
 }
 
-.mobile-menu {
-  z-index: 3;
-  padding-left: 40px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 48px;
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
 }
+.mobile-menu__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
 .mobile-menu__box {
   display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 100%;
+  height: 100vh;
+  padding-left: 40px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 48px;
 }
-.mobile-menu__btn--close {
+.mobile-menu__icon--svg {
   width: 40px;
   height: 40px;
-  justify-self: end;
+  justify-items: flex-end;
+}
+.mobile-menu__btn--close {
+  flex-direction: row;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+}
+.mobile-menu__btn--close:hover {
+  color: #2196F3;
 }
 .mobile-menu__list {
   flex-direction: column;
   display: flex;
   gap: 32px;
+  padding-bottom: 302px;
+  font-family: "Roboto";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.mobile-menu__link:hover {
+  color: #2196f3;
+}
+.mobile-menu__contact--list {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  margin-bottom: 64px;
+}
+.mobile-menu__item--contact--link:hover {
+  color: #2196f3;
+}
+.mobile-menu__social--list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.mobile-menu__social--link {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.36px;
+}
+.mobile-menu__social--link:hover {
+  color: #2196f3;
 }
 
 .footer-section {
