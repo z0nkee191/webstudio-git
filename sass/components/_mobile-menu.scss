@@ -47,7 +47,7 @@
     flex-direction: column;
     display: flex;
     gap: 32px;
-    padding-bottom: 302px;
+    padding-bottom: 252px;
     @include text-main-style(40px, 500, normal, 0.8px);
   }
   &__link:hover {
@@ -64,14 +64,16 @@
     color: #2196f3;
   }
   &__social--list {
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     gap: 20px;
   }
   &__social--link {
     @include text-main-style(18px, 500, 22px, 0.36px);
+    color: #2196f3;
   }
   &__social--link:hover {
-    color: #2196f3;
+    color: black;
   }
 }

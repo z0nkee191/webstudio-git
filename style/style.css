@@ -972,7 +972,7 @@ a {
   flex-direction: column;
   display: flex;
   gap: 32px;
-  padding-bottom: 302px;
+  padding-bottom: 252px;
   font-family: "Roboto";
   font-size: 40px;
   font-style: normal;
@@ -999,6 +999,7 @@ a {
   color: #2196f3;
 }
 .mobile-menu__social--list {
+  flex-wrap: wrap;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -1010,9 +1011,10 @@ a {
   font-weight: 500;
   line-height: 22px;
   letter-spacing: 0.36px;
+  color: #2196f3;
 }
 .mobile-menu__social--link:hover {
-  color: #2196f3;
+  color: black;
 }
 
 .footer-section {
@@ -1224,6 +1226,8 @@ a {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer__btn--icon {
   width: 24px;

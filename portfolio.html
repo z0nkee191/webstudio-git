@@ -44,6 +44,11 @@
               </li>
             </ul>
           </nav>
+          <button class="header__burger" data-menu-open>
+            <svg class="header__burger">
+              <use href="./img/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
           <ul class="header__contact--list">
             <li class="header__contact--item">
               <a
@@ -353,5 +358,54 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu">
+      <div class="mobile-menu__box mobile-menu__backdrop is-hidden" data-menu>
+        <button class="mobile-menu__btn--close" data-menu-close>
+          <svg class="mobile-menu__icon--svg">
+            <use href="./img/icons.svg#icon-close">
+          </svg>
+        </button>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">Контакти</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__contact--list">
+          <li class="mobile-menu__item--contact">
+            <a class="mobile-menu__item--contact--link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__item--contact">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-menu__item--contact--link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__social--list">
+          <li class="mobile-menu__socil--item">
+            <a href="" class="mobile-menu__social--link">Instagram</a>
+          </li>
+          <li class="mobile-menu__socil--item">
+            <a href="" class="mobile-menu__social--link">Twitter</a>
+          </li>
+          <li class="mobile-menu__socil--item">
+            <a href="" class="mobile-menu__social--link">Facebook</a>
+          </li>
+          <li class="mobile-menu__socil--item">
+            <a href="" class="mobile-menu__social--link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
