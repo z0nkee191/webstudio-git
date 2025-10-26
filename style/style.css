@@ -959,11 +959,10 @@ a {
   justify-items: flex-end;
 }
 .mobile-menu__btn--close {
-  flex-direction: row;
-  display: flex;
   width: 40px;
   height: 40px;
   background-color: transparent;
+  margin-left: auto;
 }
 .mobile-menu__btn--close:hover {
   color: #2196F3;
