@@ -120,23 +120,6 @@
             </div>
             <label for="" class="hero-modal__label"> Пошта </label>
             <div class="hero-modal__box">
-              <picture>
-                <source
-                  srcset="./adaptibe-img/desktop/email@desktop-1x 1x"
-                  media="(min-width: 1280px)"
-                />
-                <source
-                  srcset="./adaptibe-img/desktop/email@desktop-1x 1x"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcset="
-                    ./adaptibe-img/desktop/email@desktop-1x 1x,
-                    ./adaptive-img/desktop/email@desktop-2x 2x
-                  "
-                  media="(min-width: 767px)"
-                />
-              </picture>
               <svg class="hero-modal__icon">
                 <use href="./img/icons.svg#icon-email-modal"></use>
               </svg>
@@ -206,11 +189,19 @@
           <div class="wwd__container">
             <ul class="wwd__list">
               <li class="wwd__item">
+                <picture>
+                  <source
+                    srcset="./adaptibe-img/desktop/desk-progue@desktop-1x.png 1x
+                            ./adaptive-img/desktop/desk-progue@desktop-2x.png 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
                 <img
-                  class="wwd__img"
-                  src="./img/first.webp"
-                  alt="Людина пише код"
-                />
+                    class="wwd__img"
+                    src="./adaptived-img/desktop/desk-progue@desktop-1x.png"
+                    alt="Людина пише код"
+                  />
+                </picture>
                 <p
                   class="wwd__text"
                   data-aos="fade-up"
@@ -221,11 +212,15 @@
                 </p>
               </li>
               <li class="wwd__item">
-                <img
-                  class="wwd-img"
-                  src="./img/second.webp"
-                  alt="Жінка тримає телефон"
-                />
+                <picture>
+                  <source
+                    srcset="./adaptibe-img/desktop/mobile-progue@desktop-1x 1x
+                            ./adaptive-img/desktop/mobile-progue@desktop-2x 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <img class="wwd-img" src="./adaptived-img/desktop/mobile-progue@desktop-1x.png" alt="Жінка тримає телефон">
+                </picture>
                 <p
                   class="wwd__text"
                   data-aos="fade-up"
@@ -236,7 +231,15 @@
                 </p>
               </li>
               <li class="wwd__item">
-                <img class="wwd__img" src="./img/third.webp" alt="Планшет" />
+                <picture>
+                  <source
+                    srcset="./adaptibe-img/desktop/designer-solution@desktop-1x 1x
+                            ./adaptive-img/desktop/designer-solution@desktop-2x 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <img class="wwd__img" src="./adaptived-img/desktop/designer-solution@desktop-1x.png" alt="Планшет">
+                </picture>
                 <p
                   class="wwd__text"
                   data-aos="fade-up"
@@ -266,11 +269,28 @@
                 data-aos="flip-left"
                 data-aos-duration="1800"
               >
-                <img
-                  class="staff__img"
-                  src="./img/igor.webp"
-                  alt="Зображення чоловіка"
+              <picture>
+                <source
+                  srcset="./adaptibe-img/desktop/igor@desktop-1x 1x
+                          ./adaptive-img/desktop/igor@desktop-2x 2x
+                  "
+                  media="(min-width: 1280px)"
                 />
+                <source
+                  srcset="./adaptibe-img/tablet/igor@tablet-1x 1x
+                          ./adaptive-img/tablet/igor@tablet-2x 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./adaptibe-img/mobile/igor@mobile-1x 1x
+                    ./adaptive-img/mobile/igor@mobile-2x 2x
+                  "
+                  media="(min-width: 767px)"
+                />
+                <img class="staff__img" src="./adaptived-img/mobile/igor@mobile-1x.png" alt="Зображення чоловіка">
+              </picture>
                 <div class="staff__box">
                   <h3 class="staff__list--title">Ігор Дем'яненко</h3>
                   <p class="staff__text" lang="en">Product Designer</p>
@@ -311,11 +331,28 @@
                 data-aos="flip-left"
                 data-aos-duration="2200"
               >
-                <img
-                  class="staff__img"
-                  src="./img/olga.webp"
-                  alt="Зображення жінки"
+              <picture>
+                <source
+                  srcset="./adaptibe-img/desktop/olga@desktop-1x 1x
+                          ./adaptive-img/desktop/olga@desktop-2x 2x
+                  "
+                  media="(min-width: 1280px)"
                 />
+                <source
+                  srcset="./adaptibe-img/tablet/olga@tablet-1x 1x
+                          ./adaptive-img/tablet/olga@tablet-2x 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./adaptibe-img/mobile/olga@mobile-1x 1x
+                    ./adaptive-img/mobile/olga@mobile-2x 2x
+                  "
+                  media="(min-width: 767px)"
+                />
+                <img class="staff__img" src="./adaptived-img/mobile/olga@mobile-1x.png" alt="Зображення жінки">
+              </picture>
                 <div class="staff__box">
                   <h3 class="staff__list--title">Ольга Рєпіна</h3>
                   <p class="staff__text" lang="en">Frontend Developer</p>
@@ -356,11 +393,28 @@
                 data-aos="flip-left"
                 data-aos-duration="2600"
               >
-                <img
-                  class="staff__img"
-                  src="./img/mykola.webp"
-                  alt="Зображення чоловіка"
+              <picture>
+                <source
+                  srcset="./adaptibe-img/desktop/mykola@desktop-1x 1x
+                          ./adaptive-img/desktop/mykola@desktop-2x 2x
+                  "
+                  media="(min-width: 1280px)"
                 />
+                <source
+                  srcset="./adaptibe-img/tablet/mykola@tablet-1x 1x
+                          ./adaptive-img/tablet/mykola@tablet-2x 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./adaptibe-img/mobile/mykola@mobile-1x 1x
+                    ./adaptive-img/mobile/mykola@mobile-2x 2x
+                  "
+                  media="(min-width: 767px)"
+                />
+                <img class="staff__img" src="./adaptived-img/mobile/mykola@mobile-1x.png" alt="Зображення чоловіка">
+              </picture>
                 <div class="staff__box">
                   <h3 class="staff__list--title">Микола Тарасов</h3>
                   <p class="staff__text" lang="en">Marketing</p>
@@ -401,11 +455,28 @@
                 data-aos="flip-left"
                 data-aos-duration="3000"
               >
-                <img
-                  class="staff__img"
-                  src="./img/michael.webp"
-                  alt="Зображення чоловіка"
+              <picture>
+                <source
+                  srcset="./adaptibe-img/desktop/myhaulo@desktop-1x 1x
+                          ./adaptive-img/desktop/myhaulo@desktop-2x 2x
+                  "
+                  media="(min-width: 1280px)"
                 />
+                <source
+                  srcset="./adaptibe-img/tablet/myhaulo@tablet-1x 1x
+                          ./adaptive-img/tablet/myhaulo@tablet-2x 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./adaptibe-img/mobile/myhaulo@mobile-1x 1x
+                    ./adaptive-img/mobile/myhaulo@mobile-2x 2x
+                  "
+                  media="(min-width: 767px)"
+                />
+                <img class="staff__img" src="./adaptived-img/mobile/myhaulo@mobile-1x.png" alt="Зображення чоловіка">
+              </picture>
                 <div class="staff__box">
                   <h3 class="staff__list--title">Михайло Єрмаков</h3>
                   <p class="staff__text" lang="en">UI Designer</p>
